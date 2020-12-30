@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Form</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="user_name">User Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="toggle_text">ON</string>
+    <string name="Select_Language">Select Language</string>
+    <string name="English">English</string>
+    <string name="Hindi">Hindi</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="Gender">Gender</string>
+</resources>
