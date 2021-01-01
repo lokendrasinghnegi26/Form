@@ -1,6 +1,9 @@
 package com.lokendrasingh.form;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -61,5 +64,28 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void onAlert(View view) {
+        AlertDialog.Builder myAlert= new AlertDialog.Builder(this);     //to create alert dialog we created a object of AlertDialog.Builder
+        myAlert.setTitle("Exit");
+        myAlert.setMessage("Are you sure?");
+        myAlert.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+        myAlert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            dialog.cancel();
+
+            }
+        });
+        myAlert.show();
+    }
+
+    public void onProgress(View view) {
     }
 }
